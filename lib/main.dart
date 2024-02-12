@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_demo/components/container_sized_box.dart';
-import 'package:flutter_demo/components/scaffold.dart';
-
+import 'package:flutter_demo/components/image_learn.dart';
 void main() {
   runApp(const MainApp());
 }
@@ -15,8 +13,9 @@ class MainApp extends StatelessWidget {
       home: MaterialApp(
         title: 'Flutter Demo',
         theme: ThemeData.dark(),
-        home: ScaffoldLearn(),
+        home: const ImageLearn()
       ),
     );
   }
 }
+//TODO: Başında _ varsa private oluyor.

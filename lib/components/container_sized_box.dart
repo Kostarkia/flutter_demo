@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class ContainerSizedBox extends StatelessWidget {
+  const ContainerSizedBox({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -23,11 +25,11 @@ class ContainerSizedBox extends StatelessWidget {
                 constraints: const BoxConstraints(
                     maxHeight: 50,
                     maxWidth: 150,
-                    minWidth: 50), //Can be used for responsive?
-                child: Text('1' * 100),
+                    minWidth: 50),
                 padding: const EdgeInsets.all(10), //Container padding
                 margin: const EdgeInsets.all(150), //Container margin
-                decoration: CardUtility.boxDecoration)
+                decoration: CardUtility.boxDecoration, //Can be used for responsive?
+                child: Text('1' * 100))
           ],
         ));
   }
